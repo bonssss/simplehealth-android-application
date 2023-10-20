@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appback"
+    tools:context=".CartActivity">
+
+    <TextView
+        android:id="@+id/RtextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Health Care"
+        android:textColor="#FF9800"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <TextView
+        android:id="@+id/cartmedicinetitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lab test cart items"
+        android:textColor="#FF9800"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RtextView"
+        app:layout_constraintVertical_bias="0.021" />
+
+    <ListView
+        android:id="@+id/medicinecartlistview"
+        android:layout_width="313dp"
+        android:cacheColorHint="@color/colorWhite"
+        android:layout_height="281dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cartmedicinetitle" />
+
+    <Button
+        android:id="@+id/medicinecheckbutton12"
+        android:layout_width="108dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="16dp"
+        android:text="Check"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.639"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/medicinebuttonback1"
+        android:layout_width="86dp"
+        android:layout_height="44dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/medicinecartdatebutton2"
+        app:layout_constraintVertical_bias="0.714"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/medicinecartdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Date"
+        android:textColor="#F1EFEF"
+        app:layout_constraintBottom_toTopOf="@+id/medicinecheckbutton12"
+        app:layout_constraintEnd_toStartOf="@+id/cartdatehour"
+        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/medicinecarttextviewcost"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <TextView
+        android:id="@+id/cartdatehour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select  hour"
+        android:textColor="#F1EFEF"
+        app:layout_constraintBottom_toTopOf="@+id/medicinebuttonback1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/medicinecarttextviewcost"
+        app:layout_constraintVertical_bias="0.357"
+        tools:ignore="UnknownId" />
+
+    <Button
+        android:id="@+id/medicinecartdatebutton"
+        style="?android:spinnerStyle"
+        android:layout_width="124dp"
+        android:layout_height="37dp"
+
+        android:text="12/12/2020"
+        app:layout_constraintBottom_toTopOf="@+id/medicinecheckbutton12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/medicinecartdate"
+        app:layout_constraintVertical_bias="0.514"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/medicinecartdatebutton2"
+        style="?android:spinnerStyle"
+        android:layout_width="110dp"
+
+        android:layout_height="38dp"
+        android:layout_marginBottom="88dp"
+        android:text="10:00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/medicinecarttextviewcost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cost: 1000$"
+        android:textColor="#F4F4F4"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/medicinecartlistview"
+        app:layout_constraintVertical_bias="0.032" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

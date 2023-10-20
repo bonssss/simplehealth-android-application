@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appback"
+    tools:context=".AppointmentActivity">
+
+    <TextView
+        android:id="@+id/RtextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Health Care"
+        android:textColor="#FF9800"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <TextView
+        android:id="@+id/medicinebooktitile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Appointment"
+        android:textColor="#FF9800"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RtextView"
+        app:layout_constraintVertical_bias="0.021" />
+
+    <EditText
+        android:id="@+id/bookfullname"
+        android:layout_width="341dp"
+        android:layout_height="57dp"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Full Name"
+        android:inputType="text"
+        android:textColor="#EAE5E5"
+        android:textColorHint="#F6F4F4"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/medicinebooktitile"
+        app:layout_constraintVertical_bias="0.095" />
+
+    <EditText
+        android:id="@+id/bookaddress"
+        android:layout_width="335dp"
+        android:layout_height="52dp"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="textPersonName"
+        android:textColor="#EAE5E5"
+        android:textColorHint="#F6F4F4"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/medicinebooktitile"
+        app:layout_constraintVertical_bias="0.237" />
+
+    <EditText
+        android:id="@+id/bookpincode"
+        android:layout_width="335dp"
+        android:layout_height="48dp"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="textPersonName"
+        android:textColor="#EADCDC"
+        android:textColorHint="#FDFBFB"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookfullname"
+        app:layout_constraintVertical_bias="0.228" />
+
+    <EditText
+        android:id="@+id/bookcontactnumber"
+        android:layout_width="336dp"
+        android:layout_height="42dp"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Fees"
+        android:inputType="textPersonName"
+        android:textColor="#EADCDC"
+        android:textColorHint="#FDFBFB"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookpincode"
+        app:layout_constraintVertical_bias="0.107"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/checkbutton"
+        android:layout_width="347dp"
+        android:layout_height="45dp"
+        android:text="Book"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookcontactnumber"
+        app:layout_constraintVertical_bias="0.639"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/medicinebuttonback1"
+        android:layout_width="251dp"
+        android:layout_height="45dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkbutton"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/medicinecartdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Date"
+        android:textColor="#F1EFEF"
+        app:layout_constraintBottom_toTopOf="@+id/medicinecartdatebutton"
+        app:layout_constraintEnd_toStartOf="@+id/cartdatehour"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookcontactnumber"
+        app:layout_constraintVertical_bias="0.491" />
+
+    <TextView
+        android:id="@+id/cartdatehour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select  hour"
+        android:textColor="#F1EFEF"
+        app:layout_constraintBottom_toTopOf="@+id/medicinecartdatebutton2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookcontactnumber"
+        app:layout_constraintVertical_bias="0.491" />
+
+    <Button
+        android:id="@+id/medicinecartdatebutton"
+        style="?android:spinnerStyle"
+        android:layout_width="124dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="20dp"
+        android:text="12/12/2020"
+        app:layout_constraintBottom_toTopOf="@+id/checkbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/medicinecartdatebutton2"
+        style="?android:spinnerStyle"
+        android:layout_width="110dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="16dp"
+        android:text="10:00"
+        app:layout_constraintBottom_toTopOf="@+id/checkbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.867"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
